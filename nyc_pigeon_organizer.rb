@@ -1,5 +1,5 @@
 
-require 'pry'
+
 def nyc_pigeon_organizer(data)
   # write your code here!
  
@@ -7,6 +7,7 @@ def nyc_pigeon_organizer(data)
                 
   
               data.each do |attribute, info_hash |
+               
                 info_hash.each do |pigeon_description, pigeon_names|
                   pigeon_names.each do |name|
                     
@@ -25,7 +26,7 @@ def nyc_pigeon_organizer(data)
                       end
                       
                       org_by_pigeon_name[name][attribute] << pigeon_description.to_s
-                      # make sure that pigeon_description is always a string value
+                      # make sure that pigeon_description is always a string value WHY: Because pigeon_description are values now
                       #convert symbol to string in Ruby
                   end
                   
